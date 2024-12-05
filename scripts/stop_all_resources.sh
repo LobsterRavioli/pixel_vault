@@ -4,7 +4,7 @@
 set -e
 
 # Variables
-RESOURCE_GROUP="my-nodejs-rg"
+RESOURCE_GROUP="pixelvault-nodejs-rg"
 
 # Stop all App Services
 echo "Stopping all App Services in resource group: $RESOURCE_GROUP..."

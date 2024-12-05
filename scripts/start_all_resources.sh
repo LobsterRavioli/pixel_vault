@@ -4,7 +4,7 @@
 set -e
 
 # Variables
-RESOURCE_GROUP="my-nodejs-rg"
+RESOURCE_GROUP="pixelvault-nodejs-rg"
 
 # Start all App Services
 echo "Starting all App Services in resource group: $RESOURCE_GROUP..."
