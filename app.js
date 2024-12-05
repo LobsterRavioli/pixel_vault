@@ -7,6 +7,10 @@ const app = express();
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+// Serve the "data" directory
+app.use('/data', express.static(path.join(__dirname, 'data')));
+
 // API endpoint to get game data
 app.get('/api/games', (req, res) => {
     res.json(gamesData);
