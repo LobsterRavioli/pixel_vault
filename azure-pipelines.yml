@@ -59,7 +59,7 @@ stages:
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
-              appName: $(webAppName)
-              runtimeStack: 'NODE|20-lts'
+              appName: 'pixelvault-nodejs-20996' # Changed to your specific app name
+              runtimeStack: 'NODE|16-lts'        # Changed to match your requirements
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
-              startUpCommand: 'npm run start'
+              startUpCommand: 'node app.js'
